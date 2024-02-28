@@ -20,7 +20,7 @@ async function handler(req, res) {
       message,
     };
     let client;
-    const connectionString = `mongodb+srv://${process.env._username}:${process.env._password}@${process.env._clustername}.zp2paws.mongodb.net/${process.env._database}?retryWrites=true&w=majority&appName=Cluster0`;
+    const connectionString = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.zp2paws.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority&appName=Cluster0`;
     try {
       client = await MongoClient.connect(connectionString);
     } catch (error) {
