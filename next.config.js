@@ -7,7 +7,7 @@ module.exports = (phase) => {
         _username: "Pratim66",
         _password: "SuS7sG0jeJk5XLba",
         _clustername: "cluster0",
-        _database: "contacts-dev",
+        _database: "contacts",
       },
     };
   }
